@@ -4,6 +4,13 @@ import { useGSAP } from "@gsap/react";
 import { useState } from "react";
 import "remixicon/fonts/remixicon.css";
 
+// Import images as ES6 modules for Vite static assets
+import backgroundImg from "/background.jpg";
+import skyImg from "/imag.png"; // Note: sky.png doesn't exist, using imag.png
+import charImg from "/char.png";
+import ps5Img from "/ps5.png";
+import miniCharImg from "/miniChar.png";
+
 function App() {
   let [showContent, setShowContent] = useState(false);
   useGSAP(() => {
@@ -118,7 +125,7 @@ function App() {
             </mask>
           </defs>
           <image
-            href="./background.jpg"
+            href={backgroundImg}
             width="100%"
             height="100%"
             preserveAspectRatio="xMidYMid slice"
@@ -144,12 +151,12 @@ function App() {
             <div className="imagdiv relative overflow-hidden w-full h-screen bg-black">
               <img
                 className="absolute scale-[1.5] sky rotate-[-20deg] sky top-0 left-0 w-full h-screen object-cover"
-                src="./sky.png"
+                src={skyImg}
                 alt=""
               />
               <img
                 className="absolute bg rotate-[-3deg] scale-[1.8] bg top-0 left-0 w-full h-screen object-cover"
-                src="./background.jpg"
+                src={backgroundImg}
                 alt="no img"
               />
               <div className="text  text-white flex flex-col gap-3 absolute top-2 left-1/2 scale-[1.4] rotate-[-10deg] -translate-x-1/2 ">
@@ -161,7 +168,7 @@ function App() {
               </div>
               <img
                 className="absolute charactor -bottom-[150%] -translate-x-1/2 left-1/2 scale-[3] rotate-[-20deg]"
-                src="./char.png"
+                src={charImg}
                 alt=""
               />
               <div className="bottom text-white bg-gradient-to-t from-black to-transparent w-full px-3 py-7 absolute left-0 bottom-0 ">
@@ -171,7 +178,7 @@ function App() {
                 </div>
                 <img
                   className="absolute h-[50px] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
-                  src="./ps5.png"
+                  src={ps5Img}
                   alt=""
                 />
               </div>
@@ -182,7 +189,7 @@ function App() {
               <div className="limg relative w-1/2 h-full">
                 <img
                   className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 scale-[0.7]"
-                  src="./miniChar.png"
+                  src={miniCharImg}
                   alt=""
                 />
               </div>
