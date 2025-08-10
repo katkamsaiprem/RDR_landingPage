@@ -1,1 +1,11 @@
 @import "tailwindcss";
+
+@font-face {
+    font-family: "Chinese Rocks";
+    src: url("./chinese rocks rg.otf");
+        
+}
+
+html, body {
+    font-family: "Chinese Rocks";
+}

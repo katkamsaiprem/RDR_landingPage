@@ -1,0 +1,9 @@
+
+Parallax effect
+
+- Get mouse x and innerWidth (total width of window) and divide them to get values from 0 to 1, because it makes it support all screens.
+- Subtract with 0.5, because -0.5 is center, so it becomes left -0.5 and right +0.5 and center is 0, because it makes it easy to move elements left or right based on how far the mouse is from 0, not edges.
+- We can multiply with a value to increase its range.
+
+
+//items-center makes child elements center in y axis and justify-center makes child elements center in x-axis
