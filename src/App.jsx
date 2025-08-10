@@ -76,7 +76,7 @@ function App() {
     });
     const main = document.querySelector(".main");
     main?.addEventListener("mousemove", (e) => {
-      console.log(e);
+      
       const moveX = (e.clientX / window.innerWidth - 0.5) * 40; //paralllax effect,ref to plan.tldr
 
       gsap.to(".text", {
