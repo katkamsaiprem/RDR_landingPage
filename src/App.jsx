@@ -63,7 +63,7 @@ function App() {
       x: "-50%",
       rotate: 0,
       duration: 1.7,
-      bottom: "-60%",
+      bottom: "-15%",
       delay: -0.8,
       ease: "Expro.easeInOut",
     });
@@ -118,7 +118,7 @@ function App() {
             </mask>
           </defs>
           <image
-            href="./bg.png"
+            href="./background.jpg"
             width="100%"
             height="100%"
             preserveAspectRatio="xMidYMid slice"
@@ -149,19 +149,19 @@ function App() {
               />
               <img
                 className="absolute bg rotate-[-3deg] scale-[1.8] bg top-0 left-0 w-full h-screen object-cover"
-                src="./bg.png"
+                src="./background.jpg"
                 alt="no img"
               />
               <div className="text  text-white flex flex-col gap-3 absolute top-2 left-1/2 scale-[1.4] rotate-[-10deg] -translate-x-1/2 ">
                 <h1 className="text-[5rem] leading-none -ml-40">Red</h1>
                 <h1 className="text-[5rem] leading-none -ml-30">Dead</h1>
                 <h1 className="text-[5rem] leading-none -ml-40">
-                  Redemptions <span className="text-red-600" >II</span>
+                  Redemptions 
                 </h1>
               </div>
               <img
                 className="absolute charactor -bottom-[150%] -translate-x-1/2 left-1/2 scale-[3] rotate-[-20deg]"
-                src="./girlbg.png"
+                src="./char.png"
                 alt=""
               />
               <div className="bottom text-white bg-gradient-to-t from-black to-transparent w-full px-3 py-7 absolute left-0 bottom-0 ">
@@ -182,34 +182,23 @@ function App() {
               <div className="limg relative w-1/2 h-full">
                 <img
                   className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 scale-[0.7]"
-                  src="./imag.png"
+                  src="./miniChar.png"
                   alt=""
                 />
               </div>
-              <div className="right w-30%">
-                <h1 className="text-5xl">sefasef</h1>
-                <h1 className="text-5xl  mt-2">sefasef</h1>
-                <p className="mt-3 text-xl font-[Helvetica_Now_Display]">
-                  America, 1899. The end of the Wild West era has begun. After a
-                  robbery goes badly wrong in the western town of Blackwater,
-                  <br />
-                  Arthur Morgan and the Van der Linde gang are forced to flee.
-                  With federal agents and the best bounty hunters in the nation
-                  <br />
-                  massing on their heels, the gang must rob, steal and fight
-                  their way across the rugged heartland
-                   of America in order to
-                  survive. As deepening internal divisions threaten to tear the
-                  <br />
-                  gang apart, Arthur must make a choice between his own ideals
-                  and loyalty to the gang who raised him.
+              <div className="right w-full flex flex-col items-center justify-center px-4">
+                <h1 className="text-5xl mb-8 text-center">Red Dead Redemption</h1>
+                <p className="mt-4 text-xl font-[Helvetica_Now_Display] text-center leading-relaxed max-w-3xl">
+                  America, 1899. The end of the Wild West era has begun. After a robbery goes badly wrong in the western town of Blackwater, Arthur Morgan and the Van der Linde gang are forced to flee. With federal agents and the best bounty hunters in the nation massing on their heels, the gang must rob, steal and fight their way across the rugged heartland of America in order to survive. As deepening internal divisions threaten to tear the gang apart, Arthur must make a choice between his own ideals and loyalty to the gang who raised him.
                 </p>
-                <button onClick={()=>{
-                  window.open("https://www.rockstargames.com/games/reddeadredemption2","_blank");
-                }} className="bg-red-900 px-2 py-2 mt-6 text-black cursor-pointer text-2xl onclick:bg-red-800 transition-all duration-300 ease-in-out hover:bg-red-700 ">
+                <button
+                  onClick={() => {
+                    window.open("https://www.rockstargames.com/games/reddeadredemption2", "_blank");
+                  }}
+                  className="bg-red-900 px-6 py-3 mt-8 text-black cursor-pointer text-2xl transition-all duration-300 ease-in-out hover:bg-red-700 rounded-lg font-semibold"
+                >
                   Download Now
                 </button>
-                
               </div>
             </div>
           </div>
