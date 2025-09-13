@@ -193,7 +193,7 @@ function App() {
                 </p>
                 <button
                   onClick={() => {
-                    window.open("https://www.rockstargames.com/games/reddeadredemption2", "_blank");
+                    window.open("https://www.rockstargames.com/reddeadredemption", "_blank");
                   }}
                   className="bg-red-900 px-6 py-3 mt-8 text-black cursor-pointer text-2xl transition-all duration-300 ease-in-out hover:bg-red-700 rounded-lg font-semibold"
                 >
